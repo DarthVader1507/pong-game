@@ -40,8 +40,8 @@ public class ScriptBall : MonoBehaviour
     {
         rb.linearVelocity = Vector2.zero;
         transform.position = Vector2.zero;
-        player_paddle.transform.position = new Vector2(-9.5f,0);
-        AI_paddle.transform.position = new Vector2(9.5f,0);
+        player_paddle.transform.position = new Vector2(-8f,0);
+        AI_paddle.transform.position = new Vector2(8f,0);
         Invoke("StartBall",2f);
     }
     private void OnCollisionEnter2D(Collision2D other)
